@@ -1,0 +1,165 @@
+/* Here we start to draw and layout */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*Variables*/
+:root {
+  --secundary-font: "Playfair", serif;
+  --prymary-font: "Poppins", sans-serif;
+  --black: #313131;
+  --brown: #9b9a78;
+  --max-widht-page: 1200px;
+}
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: var(--prymary-font);
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-widht-page);
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.nav_ppal ul {
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav_ppal a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.nav_ppal a:hover {
+  color: var(--brown);
+}
+
+.nav_ppal a.active {
+  color: var(--brown);
+}
+
+aside.login ul {
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+aside.login ul a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+aside.login ul a.link {
+  color: var(--brown);
+  text-decoration: underline;
+}
+
+aside.login ul a.botton {
+  color: white;
+  background-color: var(--brown);
+  padding: 12px 28px;
+}
+
+aside.login ul a.botton:hover {
+  background-color: var(--black);
+  transition: 0.5s all ease-in-out;
+}
+
+section.hero {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(../img/Placeholder.jpg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.hero_content {
+  width: 50%;
+  padding-bottom: 50px;
+  
+}
+.hero_header {
+  background: #FFFFFFB2;
+  backdrop-filter: blur(6px);
+  
+}
+.hero_header h1 {
+  padding: 0%;
+  font-family: var(--secundary-font);
+  font-size: 50px;
+  line-height: 55px;
+  max-width: 500px;
+  padding-top: 26px;
+  padding-left: 46px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.hero_header h1::before {
+  content: '';
+  height: 8px;
+  width: 72px;
+  position: absolute;
+  background-color: var(--brown);
+  right:70px;
+  top: 48px;
+}
+
+.hero_header p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--brown);
+  padding: 15px 30px;
+}
+
+.hero_list {
+  padding-top: 60px; 
+}
+
+.hero_list ul {
+  margin-left: auto;
+  padding: 0%;
+  padding-right: 40px;
+  list-style: none;
+  width: 40%; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+
+}
+.hero_list ul li {
+  width: 200px;
+}
+
+section.coworking_info {
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+  
+}
+
+section.coworking_info h3 {
+  color: var(--black);
+}
+section.coworking_info p {
+  color: var(--brown);
+}
+
